@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/hp/Desktop/class_Prj1/mlruns/207530432584289713/f1a0707ff7a64d8492cd2eacfe355319/artifacts
+end_time: 1779879301311
+entry_point_name: ''
+experiment_id: '207530432584289713'
+lifecycle_stage: active
+run_id: f1a0707ff7a64d8492cd2eacfe355319
+run_name: RandomForest
+run_uuid: f1a0707ff7a64d8492cd2eacfe355319
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779879297511
+status: 3
+tags: []
+user_id: hp
