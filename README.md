@@ -25,7 +25,8 @@ Scheduler: APScheduler
 CI/CD: GitHub Actions → Docker Hub → Render
 Deploy: Render Free Tier
 Project Structure
-# ml-classification-project/ ├── api/ # FastAPI app, templates, static files ├── data/ # Raw CSV data and reload script ├── etl/ # Extract, Transform, Load scripts ├── ml/ # Preprocessing, Training, Evaluation, Prediction ├── monitoring/ # Evidently drift report ├── scheduler/ # APScheduler auto retrain job ├── tests/ # Pytest test cases ├── .github/workflows/ # GitHub Actions CI/CD ├── Dockerfile # Docker configuration ├── render.yaml # Render deployment config └── requirements.txt # Python dependencies
+
+ml-classification-project/ ├── api/ # FastAPI app, templates, static files ├── data/ # Raw CSV data and reload script ├── etl/ # Extract, Transform, Load scripts ├── ml/ # Preprocessing, Training, Evaluation, Prediction ├── monitoring/ # Evidently drift report ├── scheduler/ # APScheduler auto retrain job ├── tests/ # Pytest test cases ├── .github/workflows/ # GitHub Actions CI/CD ├── Dockerfile # Docker configuration ├── render.yaml # Render deployment config └── requirements.txt # Python dependencies
 
 # Architecture
 MySQL (source) → ETL → PostgreSQL (warehouse) → ML Training → Model → FastAPI → Docker → Render
