@@ -1,7 +1,6 @@
 ﻿# Online-Shoppers-Intention-Predictor
-<img width="1457" height="975" alt="Screenshot 2026-06-04 130336" src="https://github.com/user-attachments/assets/cd6dc25d-08ba-4a18-91fb-470031a8cd4d" />
-<img width="1460" height="951" alt="Screenshot 2026-06-04 130351" src="https://github.com/user-attachments/assets/1a6fc4ac-9763-49fc-85c1-59dcc2e68063" />
-<img width="1553" height="947" alt="Screenshot 2026-06-04 131851" src="https://github.com/user-attachments/assets/0a74b523-99e1-4512-bcd0-98c75809e277" />
+<img width="1507" height="965" alt="Screenshot 2026-06-04 132657" src="https://github.com/user-attachments/assets/6b2b177f-3504-4b62-8de9-ba04b6ade0fd" />
+<img width="1458" height="955" alt="Screenshot 2026-06-04 133920" src="https://github.com/user-attachments/assets/5fcccc3c-0c2d-4d06-8dcf-e9815af61888" />
 
 
 A complete end-to-end ML Classification project that predicts whether an online shopper will make a purchase or not.
@@ -62,7 +61,7 @@ PostgreSQL 15+
 Docker (optional)
 Steps
 # clone repository
-git clone https://github.com/Amitmakode/ml-classification-project.git
+git clone [https://github.com/Harshada3008/Online-Shoppers-Intention-Predictor]
 cd ml-classification-project
 
 # create virtual environment
