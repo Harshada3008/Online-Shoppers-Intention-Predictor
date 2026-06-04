@@ -6,12 +6,17 @@
 
 A complete end-to-end ML Classification project that predicts whether an online shopper will make a purchase or not.
 
-Live Demo
+# Live Demo
+
 Frontend: https://shoppers-ml-api.onrender.com
+
 Swagger UI: https://shoppers-ml-api.onrender.com/docs
-Tech Stack
+
+# Tech Stack
 Source DB: MySQL
+
 Data Warehouse: PostgreSQL
+
 ETL: Python (Extract → Transform → Load)
 ML: Scikit-learn, XGBoost, MLflow
 API: FastAPI
@@ -20,17 +25,17 @@ Scheduler: APScheduler
 CI/CD: GitHub Actions → Docker Hub → Render
 Deploy: Render Free Tier
 Project Structure
-ml-classification-project/ ├── api/ # FastAPI app, templates, static files ├── data/ # Raw CSV data and reload script ├── etl/ # Extract, Transform, Load scripts ├── ml/ # Preprocessing, Training, Evaluation, Prediction ├── monitoring/ # Evidently drift report ├── scheduler/ # APScheduler auto retrain job ├── tests/ # Pytest test cases ├── .github/workflows/ # GitHub Actions CI/CD ├── Dockerfile # Docker configuration ├── render.yaml # Render deployment config └── requirements.txt # Python dependencies
+# ml-classification-project/ ├── api/ # FastAPI app, templates, static files ├── data/ # Raw CSV data and reload script ├── etl/ # Extract, Transform, Load scripts ├── ml/ # Preprocessing, Training, Evaluation, Prediction ├── monitoring/ # Evidently drift report ├── scheduler/ # APScheduler auto retrain job ├── tests/ # Pytest test cases ├── .github/workflows/ # GitHub Actions CI/CD ├── Dockerfile # Docker configuration ├── render.yaml # Render deployment config └── requirements.txt # Python dependencies
 
-Architecture
+# Architecture
 MySQL (source) → ETL → PostgreSQL (warehouse) → ML Training → Model → FastAPI → Docker → Render
 
-Dataset
+# Dataset
 Source: Online Shoppers Purchasing Intention Dataset
 Rows: 12,330
 Target: Revenue (Will Purchase or Not)
 Features: 17 behavioral and session features
-ML Pipeline
+# ML Pipeline
 ETL — Extract raw data from MySQL, transform, load into PostgreSQL warehouse
 Preprocessing — StandardScaler, SelectKBest (top 10 features), SMOTE for class imbalance
 Training — Random Forest vs XGBoost, best model selected automatically
@@ -100,5 +105,5 @@ Render auto deploys latest image
 Environment Variables
 DB_HOST=localhost DB_PORT=3306 DB_USER=root DB_PASSWORD=your_password DB_NAME=shoppers_db PG_HOST=localhost PG_PORT=5432 PG_USER=postgres PG_PASSWORD=your_password PG_NAME=shoppers_warehouse MLFLOW_TRACKING_URI=./mlruns MODEL_PATH=./ml/model.pkl
 
-Author
+# Author
 Harshada Rane
